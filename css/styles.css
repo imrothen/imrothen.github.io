@@ -324,7 +324,7 @@ ul {
 .sampleWrapper_firefox {
 	width: 100%;
 	height: 70%;
-	background-color: red;
+	background-color: transparent;
 	display: flex;
 }
 
@@ -333,7 +333,7 @@ ul {
 	height: 500px;
 	float: left;
 	overflow: hidden;
-	background-color: purple;
+	background-color: transparent;
 }
 
 .sampleTab_firefox {
