@@ -307,13 +307,65 @@ ul {
 	position: relative;
 }
 
-
 .sampleContent {
 	position: relative;
-	width: 1000px;
-	height: 800px;
+	width: 100%;
+	height: 100%;
 	margin: 0 auto;
-	left: -3%;
+	background-color: transparent;
+}
+
+.sampleWrapper {
+	width: 100%;
+	height: 70%;
+	background-color: transparent;
+}
+
+.sampleWrapper_firefox {
+	width: 100%;
+	height: 70%;
+	background-color: red;
+	display: flex;
+}
+
+.sampleTab {
+	width: 25%;
+	height: 500px;
+	float: left;
+	overflow: hidden;
+	background-color: purple;
+}
+
+.sampleTab_firefox {
+	width: 25%;
+	height: 600px;
+	float: inherit;
+	overflow: auto;
+	flex: 1;
+}
+
+#sampleTab_one {
+	background-image: url(../images/design_.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#sampleTab_two {
+	background-image: url(../images/web_.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#sampleTab_three {
+	background-image: url(../images/photo_.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#sampleTab_four {
+	background-image: url(../images/art_.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .aboutContainer {
