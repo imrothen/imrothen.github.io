@@ -1,0 +1,583 @@
+@charset "UTF-8";
+
+body {
+	background-color:#7FD3FF;
+	width:100%;
+	height:100%;
+	font-family: 'Karla', sans-serif;
+	margin: 0;
+  padding: 0;
+  position:absolute;
+	box-sizing: border-box;
+}
+
+li {
+	display:inline;
+	float:left;
+	font-size:12px;
+	letter-spacing:2px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#goHome {
+	padding: 4px 12px 3px 12px !important;
+}
+
+ul {
+  position: fixed;
+  top: 0;
+  width: 100%;
+	height:auto;
+	list-style-type: none;
+  margin: 0;
+  padding: 0;
+    /*background-color: #333;*/
+	z-index: 100;
+}
+
+.mainBtn {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.1s;
+	transition-duration: 0.1s;
+	cursor: pointer;
+	background-color: transparent;
+	border-bottom: solid 1px #707070;
+  padding: 14px 16px;
+	color: #FFF;
+}
+
+.mainBtn:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #707070;
+	-webkit-transform: scaleY(0);
+	transform: scaleY(0);
+	-webkit-transform-origin: 50% 100%;
+	transform-origin: 50% 100%;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+.mainBtn:hover, .mainBtn:focus, .mainBtn:active {
+  color: white;
+}
+
+.mainBtn:hover:before, .mainBtn:focus:before, .mainBtn:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+}
+
+.bodyContainer {
+	width:100%;
+	height:2000px;
+}
+
+/* Resume Classes */
+.resumeTab {
+	width:200px;
+	position:fixed;
+	float:right;
+	height:100%;
+	background-color:#00315f;
+	overflow:hidden;
+	z-index:-1;
+  right: 0;
+}
+
+.resumeContent {
+	width:90%;
+	height:85%;
+	position:relative;
+	top:80px;
+	margin: 0 auto;
+}
+
+.resumePicture {
+	width:100px;
+	height:100px;
+	background-color: gray;
+	position:relative;
+	margin:0 auto;
+}
+
+/* Main */
+
+.mainContainer {
+	width:100%;
+	height:600px;
+	position:relative;
+	margin:0 auto;
+	top:300px;
+	background-color: #FFF;
+}
+
+.elepMain {
+	width:180px;
+	height:auto;
+	right: 0;
+	top:152px;
+	position: fixed;
+	padding-right: 100px;
+}
+
+.elepMain:hover {
+	background-image: url(../images/elephant220_.png);
+	background-repeat: no-repeat;
+	overflow: hidden;
+	width: 180px !important;
+	height: auto;
+}
+
+.mainName {
+	font-family: 'Montserrat', sans-serif;
+	color: black;
+	font-size: 75px;
+	letter-spacing: 2px;
+	width: auto;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px 10px 0px 10px;
+	position: relative;
+	z-index: 1;
+	font-weight: bolder;
+	opacity: 0.7;
+}
+
+.mainOccupation {
+	font-family: 'Karla', sans-serif;
+	font-size: 70px;
+	/*color: #7FD3FF;*/
+	color: #5D9800;
+	width: auto;
+	margin: 0 auto;
+	text-align: center;
+	top: -20px;
+	position: relative;
+}
+
+.socialIcons {
+	width: 200px;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 90px;
+	overflow: hidden;
+}
+
+.behance_icon {
+	content: url(../images/behance.png);
+	float: left;
+	padding-right: 20px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.behance_icon:hover {
+	content: url(../images/behance_hover.png);
+}
+
+.linkedin_icon {
+	content: url(../images/linkedin.png);
+	overflow: hidden;
+	margin: 0 auto;
+	float: right;
+	cursor: pointer;
+}
+
+.linkedin_icon:hover {
+	content: url(../images/linkedin_hover.png);
+}
+
+.workMenu {
+	width: 100%;
+	height: 100px;
+	background-color: #222222;
+	margin-top: 150px;
+	padding-top: 43px;
+	z-index: 2;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.work_tab {
+	width: 25%;
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: lighter;
+	font-size: 30px;
+	float: left;
+	text-align: center;
+	letter-spacing: 4px;
+	color: #FFF;
+	overflow: hidden;
+	padding-top: 60px !important;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+
+#design {
+	background-color: #5D9800;
+}
+
+#design:hover {
+	background-color: #151515;
+}
+
+#uxui {
+	background-color: #FFA800;
+}
+
+#uxui:hover {
+	background-color: #151515;
+
+}
+
+#photo {
+	background-color: #C70E4F;
+}
+
+#photo:hover {
+	background-color: #151515;
+}
+
+#art {
+	background-color: #0094E2;
+}
+
+#art:hover {
+	background-color: #151515;
+}
+
+.workContent {
+	width: 100%;
+	height: 800px;
+	background-color: #363636;
+	position: relative;
+}
+
+
+.sampleContent {
+	position: relative;
+	width: 1000px;
+	height: 800px;
+	margin: 0 auto;
+	left: -3%;
+}
+
+.aboutContainer {
+	width:100%;
+	height:800px;
+	position:relative;
+	margin:0 auto !important;
+	top:1000px;
+	background-color: #7FD3FF;
+	padding: 0 !important;
+}
+
+.aboutContainer_halfOne {
+	width: 40%;
+	height: 800px;
+	background-color: #7FD3FF;
+	float: left;
+	margin: 0 auto;
+	padding: 0 !important;
+	top: 990px;
+}
+
+.aboutContainer_halfTwo {
+	width: 60%;
+	height: 800px;
+	background-color: #FFF;
+	float: left;
+	margin: 0 auto;
+}
+
+.aboutContent {
+	width: 80%;
+	height: 70%;
+	margin-top: 60px;
+	margin-left: 10%;
+	position: relative;
+	box-sizing: border-box;
+	display: block;
+	clear: both;
+}
+
+.btnArea {
+	width: 80%;
+	height: 30px;
+	margin-top: 30px !important;
+	margin-left: 10%;
+	position: relative;
+}
+
+.resumeBtn {
+	width: 200px;
+	height: 40px;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	border: solid 1px #C70E4F;
+	background-color: #FFF;
+	font-family: 'Karla', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: #363636;
+	outline: none !important;
+	cursor: pointer;
+}
+
+.resumeBtn:hover, .resumeBtn:visited, .resumeBtn:active {
+	background-color: #C70E4F;
+	color: #FFF;
+	outline: none;
+	text-decoration: none !important;
+}
+
+a:hover {
+	color: #FFF;
+	outline: none;
+	text-decoration: none !important;
+}
+
+a:visited, a:active, a:link {
+	text-decoration: none !important;
+}
+
+.aboutMe {
+	font-family: 'Montserrat', sans-serif;
+	color: #FFF;
+	font-size: 75px;
+	letter-spacing: 2px;
+	width: auto;
+	margin: 0 auto;
+	text-align: right;;
+	text-transform: uppercase;
+	padding: 10px 30px 0px 10px;
+	position: relative;
+	z-index: 1;
+	font-weight: bolder;
+	opacity: 0.8;
+	top: 38%;
+}
+
+text {
+	line-height: 2px;
+	color: #222222;
+}
+
+h3, h2 {
+	color: #363636;
+}
+
+.contactContainer {
+	width:100%;
+	height:950px;
+	position:relative;
+	margin:0 auto;
+	top:1050px;
+	background-color: #363636;
+	padding: 0 !important;
+}
+
+.contactTitle {
+	width: auto;
+	height: auto;
+	position: relative;
+	top: 20%;
+	margin: 0 auto;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	color: #FFF;
+	text-transform: uppercase;
+	font-size: 75px;
+	letter-spacing: 2px;
+	z-index: 10;
+}
+
+.contactMe {
+	font-family: 'Montserrat', sans-serif;
+	color: #FFF;
+	font-size: 75px;
+	letter-spacing: 2px;
+	width: auto;
+	margin: 0 auto;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 10px 10px 0px 10px;
+	position: relative;
+	z-index: 1;
+	font-weight: bolder;
+	opacity: 0.8;
+	top: 9%;
+}
+
+.myName {
+	font-family: 'Karla', sans-serif;
+	font-size: 70px;
+	/*color: #7FD3FF;*/
+	color: #7FD3FF;
+	width: auto;
+	margin: 0 auto;
+	text-align: center;
+	top: 9%;
+	position: relative;
+}
+
+.behance_iconContact {
+	content: url(../images/behance.png);
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.behance_iconContact:hover {
+	content: url(../images/behance_hover.png);
+}
+
+.linkedin_iconContact {
+	content: url(../images/linkedin.png);
+	margin: 0 auto;
+	cursor: pointer;
+}
+
+.linkedin_iconContact:hover {
+	content: url(../images/linkedin_hover.png);
+}
+
+.contactTabsMail {
+	width: 400px;
+	height: 60px;
+	background-color: transparent;;
+	border-bottom: 1px solid #FFF;
+	border-top: 1px solid #FFF;
+	position: relative;
+	top: 20%;
+	margin:  0 auto;
+	padding-top: 28px;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.contactTabs {
+	width: 400px;
+	height: 60px;
+	background-color: transparent;;
+	border-bottom: 1px solid #FFF;
+	border-top: 1px solid #FFF;
+	position: relative;
+	top: 20%;
+	margin:  0 auto;
+	vertical-align: middle;
+	text-align: center;
+	font-size: 25px;
+	color: #FFF;
+	margin-bottom: 10px;
+	padding-top: 10px;
+}
+
+.contactTabsMail a:link {color: #7FD3FF; text-decoration: none; }
+.contactTabsMail a:active {color: #7FD3FF; text-decoration: none; }
+.contactTabsMail a:visited {color: #7FD3FF; text-decoration: none; }
+.contactTabsMail a:hover {color: #FFA800; text-decoration: none; }
+
+.areaContent {
+	width: 100%;
+	height: auto;
+	background-color: transparent;
+	margin-top: 150px;
+	position: relative;
+}
+
+.areaName {
+	float: left;
+	font-family: 'Karla' sans-serif;
+	font-size: 50px;
+	position: relative;
+	width: 100%;
+	height: auto;
+	background-color: transparent !important;
+	padding-left: 80px;
+	margin-top: 80px;
+}
+
+#areaDesign {
+	color: #5D9800;
+}
+
+#areaWeb {
+	color: #FFA800;
+}
+
+#areaPhoto {
+	color: #C70E4F;
+}
+
+#areaArt {
+	color: #0094E2;
+}
+
+.projectDiv {
+	border-top: 1px solid #909090;
+	border-bottom: 1px solid #909090;
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+	position: relative;
+	background-color: transparent;
+	margin-top: 30px !important;
+	padding: 20px 0px 20px 0px;
+	display: flex;
+}
+
+.projectImg {
+	width: auto;
+	height: auto;
+	background-color: transparent;
+	position: relative;
+	overflow: hidden;
+}
+
+.projectDescription {
+	background-color: #FFF;
+	flex: 1;
+	height: 50%;
+	padding: 20px 20px 50px 20px;
+	margin-left: 20px;
+	box-sizing: border-box;
+	color: #494949;
+	font-family: 'Karla' sans-serif;
+	font-size: 20px;
+	overflow: hidden;
+}
