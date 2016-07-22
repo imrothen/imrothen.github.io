@@ -200,7 +200,19 @@ ul {
 	cursor: pointer;
 }
 
+.behance_icon:after {
+	content: url(../images/behance.png);
+	float: left;
+	padding-right: 20px;
+	margin: 0 auto;
+	cursor: pointer;
+}
+
 .behance_icon:hover {
+	content: url(../images/behance_hover.png);
+}
+
+.behance_icon:hover:after {
 	content: url(../images/behance_hover.png);
 }
 
@@ -212,7 +224,19 @@ ul {
 	cursor: pointer;
 }
 
+.linkedin_icon:after {
+	content: url(../images/linkedin.png);
+	overflow: hidden;
+	margin: 0 auto;
+	float: right;
+	cursor: pointer;
+}
+
 .linkedin_icon:hover {
+	content: url(../images/linkedin_hover.png);
+}
+
+.linkedin_icon:hover:after {
 	content: url(../images/linkedin_hover.png);
 }
 
@@ -327,23 +351,13 @@ ul {
 	margin-left: 10%;
 	position: relative;
 	box-sizing: border-box;
-	display: block;
+	display: relative;
 	clear: both;
-}
-
-.btnArea {
-	width: 80%;
-	height: 30px;
-	margin-top: 30px !important;
-	margin-left: 10%;
-	position: relative;
 }
 
 .resumeBtn {
 	width: 200px;
 	height: 40px;
-	display: block;
-	margin: 0 auto;
 	text-align: center;
 	border: solid 1px #C70E4F;
 	background-color: #FFF;
@@ -355,7 +369,19 @@ ul {
 	color: #363636;
 	outline: none !important;
 	cursor: pointer;
+	top: 5%;
+	clear: both;
+	margin: 0 auto;
 }
+
+.btnArea {
+	width: 80%;
+	height: 30px;
+	margin-top: 30px !important;
+	position: relative;
+}
+
+
 
 .resumeBtn:hover, .resumeBtn:visited, .resumeBtn:active {
 	background-color: #C70E4F;
@@ -460,7 +486,17 @@ h3, h2 {
 	cursor: pointer;
 }
 
+.behance_iconContact:after {
+	content: url(../images/behance.png);
+	margin: 0 auto;
+	cursor: pointer;
+}
+
 .behance_iconContact:hover {
+	content: url(../images/behance_hover.png);
+}
+
+.behance_iconContact:hover:after {
 	content: url(../images/behance_hover.png);
 }
 
@@ -470,7 +506,17 @@ h3, h2 {
 	cursor: pointer;
 }
 
+.linkedin_iconContact:after {
+	content: url(../images/linkedin.png);
+	margin: 0 auto;
+	cursor: pointer;
+}
+
 .linkedin_iconContact:hover {
+	content: url(../images/linkedin_hover.png);
+}
+
+.linkedin_iconContact:hover:after {
 	content: url(../images/linkedin_hover.png);
 }
 
