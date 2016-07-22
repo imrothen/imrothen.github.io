@@ -372,6 +372,7 @@ ul {
 	top: 5%;
 	clear: both;
 	margin: 0 auto;
+	display: block;
 }
 
 .btnArea {
